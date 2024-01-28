@@ -1,0 +1,76 @@
+.container {
+  width: 100%;
+  height: 100%; /* Adjusted to use viewport height */
+  display: flex;
+  color: white;
+  background-color: #010a1d;
+  align-items: center;
+  justify-content: center;
+  overflow: scroll;
+}
+
+.form {
+  width: 100%;
+  height: 80%;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%; /* Adjusted to take full width */
+  margin-bottom: 1rem;
+}
+
+label p {
+  font-size: 1.2em;
+  color: red;
+  font-weight: bold;
+  margin-bottom: 0.5rem; /* Added for better spacing */
+  width: 20%; /* Adjusted to take full width */
+}
+
+label textarea {
+  width: 80%;
+  height: 150px; /* Adjust the height to your preference */
+  border-radius: 0.25em;
+  padding: 1em;
+  font-size: 1em;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+label select,
+label input {
+  width: 80%; /* Adjusted to take full width */
+  border-radius: 0.25em;
+  padding: 1em;
+  font-size: 1em;
+  margin-bottom: 1rem; /* Added for better spacing */
+}
+
+.form button {
+  height: 4rem;
+  width: 80%; /* Adjusted to take full width */
+  background-color: rgb(253 29 125);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    height: auto; /* Adjusted to auto for smaller screens */
+  }
+
+  .form {
+    width: 100%;
+    padding: 1em; /* Adjusted for better spacing on smaller screens */
+  }
+}
